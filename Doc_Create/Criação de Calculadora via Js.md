@@ -23,5 +23,19 @@
 - Em seguida usando a função `setAttribute()` adicionei os `id` e as `class`; 
 
 - Para adicionar as tag  ao meu `body` usei a função `appendChild()`
+  
+  ```appendChid
+      main.setAttribute("class", "corpo");
+      main.setAttribute("id","corpo");
+      display.setAttribute("id","display");
+      display.appendChild(monitor);
+      main.appendChild(display);
+      body.appendChild(main);
+      
+  ```
+  
+  
+
+- 
 
 
