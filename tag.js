@@ -6,14 +6,14 @@ function createTags(){
     let main = document.createElement('main');
     let display = document.createElement('div');
     let monitor = document.createElement('p');
-    let bottons = document.createElement('botton');
+    
 
     //criação de id e class
 
     main.setAttribute("id","corpo");
     display.setAttribute("id","display");
     monitor.setAttribute("id","monitor");
-    bottons.setAttribute("id", "buttons");
+    //bottons.setAttribute("id", "buttons");
 
 
     // adicionando childs
@@ -21,14 +21,15 @@ function createTags(){
     display.appendChild(monitor);
     main.appendChild(display);
     body.appendChild(main);
+        
+    for( let i = 1; i <= 15; i++ ){
 
-    
-    if(mian = document.getElementById("bottons")){
+        let buttons = document.createElement('button');
+        buttons.setAttribute("id", "buttons" + i);
+        buttons.innerText = "Botão " + i;
 
-        console.log("estou aqui");
+        main.appendChild(buttons);
 
-    }else{
-        main.appendChild(bottons);
     }
 
 
