@@ -31,4 +31,68 @@
       body.appendChild(main);
   ```
 
+<<<<<<< HEAD
 - 
+=======
+Para criar 15 buttons encontrei dificuldade sabia que precisava criar um loop no primeiro momento montei a estrutura, mas não estava sabendo executar, procurei na internet mais não encontrei. 
+
+Fiz a pergunta ao chat GPT e consegui um exemplo que me mostrou como eu poderia realizar a execução;
+
+```loop
+for( let i = 1; i <= 15; i++ ){
+
+        let buttons = document.createElement('button');
+        buttons.setAttribute("id", "buttons");
+        main.appendChild(buttons);
+       
+
+
+
+        
+    }
+```
+
+Com o for os `buttons` foram criados, mas eu me encontrei com uma questão como atribuir valor aos botões. 
+
+Então declarei uma `array valueText` com os valores dos botões e dentro do `for` chamei a minha lista e seu `index[i]` 
+
+
+
+```código
+ for( let i = 1; i <= 15; i++ ){
+
+        let buttons = document.createElement('button');
+        buttons.setAttribute("id", "buttons");
+        main.appendChild(buttons);
+        buttons.innerHTML = valueText[i];
+
+
+
+        
+    }
+```
+
+
+
+Percebi que a quantidade de botões estava errada e precisei corrigir o loop ficando dessa forma: 
+
+
+
+```loop corrigido
+for( let i = 0; i < 19; i++ ){
+
+        let buttons = document.createElement('button');
+        buttons.setAttribute("id", "buttons");
+        main.appendChild(buttons);
+        buttons.innerHTML = valueText[i];
+
+
+
+        
+    }
+```
+
+
+
+
+>>>>>>> 65b7fe9e5fe1ed99f5c2bf1b1325b0d3dd027b20
