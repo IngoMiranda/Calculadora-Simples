@@ -26,7 +26,7 @@ function createTags(){
     main.appendChild(display);
     body.appendChild(main);
         
-    for( let i = 1; i <= 15; i++ ){
+    for( let i = 0; i < 19; i++ ){
 
         let buttons = document.createElement('button');
         buttons.setAttribute("id", "buttons");

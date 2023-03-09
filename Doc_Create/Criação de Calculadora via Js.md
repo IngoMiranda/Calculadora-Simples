@@ -71,6 +71,24 @@ Então declarei uma `array valueText` com os valores dos botões e dentro do `fo
 
 
 
+Percebi que a quantidade de botões estava errada e precisei corrigir o loop ficando dessa forma: 
+
+
+
+```loop corrigido
+for( let i = 0; i < 19; i++ ){
+
+        let buttons = document.createElement('button');
+        buttons.setAttribute("id", "buttons");
+        main.appendChild(buttons);
+        buttons.innerHTML = valueText[i];
+
+
+
+        
+    }
+```
+
 
 
 
