@@ -17,8 +17,6 @@
       let monitor = document.createElement('p');
       let bottons = document.createElement('botton');
   ```
-  
-  
 
 - Em seguida usando a função `setAttribute()` adicionei os `id` e as `class`; 
 
@@ -31,11 +29,6 @@
       display.appendChild(monitor);
       main.appendChild(display);
       body.appendChild(main);
-      
   ```
-  
-  
 
 - 
-
-
