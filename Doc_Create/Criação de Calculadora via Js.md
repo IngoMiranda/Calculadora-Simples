@@ -17,8 +17,6 @@
       let monitor = document.createElement('p');
       let bottons = document.createElement('botton');
   ```
-  
-  
 
 - Em seguida usando a função `setAttribute()` adicionei os `id` e as `class`; 
 
@@ -31,11 +29,14 @@
       display.appendChild(monitor);
       main.appendChild(display);
       body.appendChild(main);
-      
   ```
-  
-  
 
-- 
+Para criar 15 buttons encontrei dificuldade sabia que precisava criar um loop no primeiro momento montei a estrutura, mas não estava sabendo executar, procurei na internet mais não encontrei. 
+
+Fiz a pergunta ao chat GPT e consegui um exemplo que me mostrou como eu poderia realizar a execução;
+
+```loop para criar mais de uma elemento
+
+```
 
 
