@@ -13,9 +13,12 @@ function createTags(){
     main.setAttribute("id","corpo");
     display.setAttribute("id","display");
     monitor.setAttribute("id","monitor");
-    //bottons.setAttribute("id", "buttons");
+    const valueText = [
 
-
+        "CE", "C","DEL", "/", 7, 8, 9, "*", 4, 5, 6,"-", 1,
+        2, 3, "+", 0, ",","="  
+    ];
+    console.log(valueText);
     // adicionando childs
 
     display.appendChild(monitor);
@@ -25,12 +28,16 @@ function createTags(){
     for( let i = 1; i <= 15; i++ ){
 
         let buttons = document.createElement('button');
-        buttons.setAttribute("id", "buttons" + i);
-        buttons.innerText = "Botão " + i;
-
+        buttons.setAttribute("id", "buttons");
         main.appendChild(buttons);
+        buttons.innerHTML = valueText[i];
 
+
+
+        
     }
+
+   
 
 
        
