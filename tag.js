@@ -12,7 +12,8 @@ function createTags(){
         "CE", "C","DEL", "/", 7, 8, 9, "*", 4, 5, 6,"-", 1,
         2, 3, "+", 0, ".","="   
     ];
-    
+
+       
 
     //criação de id e class
 
@@ -36,11 +37,35 @@ function createTags(){
         buttons.setAttribute("id", "buttons");
         teclas.appendChild(buttons);
         buttons.innerHTML = valueText[i];
+
+        if(valueText[i] === "CE" || valueText[i] === "C" || valueText[i] === "DEL"){
+
+            buttons.setAttribute('class', 'cor');
+            let cor = document.querySelectorAll('.cor');
+           
+            cor.forEach(el=>{
+                el.style.background = '#E2E2E2';
+                el.style.color = '#343434';
+            })
+           
+            
+        }else if(valueText[i] === "="){
+
+            buttons.setAttribute('class', 'equal');
+           let  corEqual = document.querySelector('.equal');
+            corEqual.style.background = '#E2E2E2';
+            corEqual.style.color = '#343434';
+
+        }
              
     }
+       
+   
 
-    buttons[buttons.length -1].setAttribute('class', 'equal');
+    
+  
+    
+    
     
    
-    
 }
