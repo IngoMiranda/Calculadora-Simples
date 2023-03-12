@@ -39,8 +39,7 @@ function createTags(){
              
     }
 
-    
-    
+    buttons[buttons.length -1].setAttribute('class', 'oi');
    
     
 }
