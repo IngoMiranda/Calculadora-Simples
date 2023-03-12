@@ -5,6 +5,7 @@ function createTags(){
     let body = document.querySelector('body');
     let main = document.createElement('main');
     let display = document.createElement('div');
+    let teclas = document.createElement('div');
     let monitor = document.createElement('p');
     const valueText = [
 
@@ -16,6 +17,7 @@ function createTags(){
     //criação de id e class
 
     main.setAttribute("id","corpo");
+    teclas.setAttribute("id","tec");
     display.setAttribute("id","display");
     monitor.setAttribute("id","monitor");
     
@@ -24,21 +26,20 @@ function createTags(){
 
     display.appendChild(monitor);
     main.appendChild(display);
+    main.appendChild(teclas);
     body.appendChild(main);
-        
+
+           
     for( let i = 0; i < 19; i++ ){
 
         let buttons = document.createElement('button');
         buttons.setAttribute("id", "buttons");
-        main.appendChild(buttons);
+        teclas.appendChild(buttons);
         buttons.innerHTML = valueText[i];
-        
-
-       
+             
     }
 
-   
-      
+    
     
    
     
