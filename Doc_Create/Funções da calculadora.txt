@@ -1,0 +1,22 @@
+Funções da calculadora;
+
+- O número aparecer no display; 
+
+- O número e o operador aparecem no monitor;
+
+- Posso trocar o operador antes de colocar o próximo número da operação; 
+
+- O resultado da operção aparece no display, enquanto no monitor aparecer a operação; 
+
+- Posso concatenar as operação formando uma expressão;
+
+- CE apaga o valor do display; 
+
+- C apaga todos os valores; 
+
+- DEL apaga o último número, quando tem resultado apaga a expressão do monitor e deixa o do display; 
+
+
+
+
+
