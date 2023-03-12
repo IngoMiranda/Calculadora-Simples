@@ -1,0 +1,3 @@
+
+
+dipM.innerHTML='0';

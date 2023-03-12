@@ -6,7 +6,9 @@ function createTags(){
     let main = document.createElement('main');
     let display = document.createElement('div');
     let teclas = document.createElement('div');
+    let dipM = document.createElement('p');
     let monitor = document.createElement('p');
+   
     const valueText = [
 
         "CE", "C","DEL", "/", 7, 8, 9, "*", 4, 5, 6,"-", 1,
@@ -20,12 +22,15 @@ function createTags(){
     main.setAttribute("id","corpo");
     teclas.setAttribute("id","tec");
     display.setAttribute("id","display");
+    dipM.setAttribute("id","top-monitor");
     monitor.setAttribute("id","monitor");
+    
     
 
    // adicionando childs
 
     display.appendChild(monitor);
+    display.appendChild(dipM);
     main.appendChild(display);
     main.appendChild(teclas);
     body.appendChild(main);
@@ -52,18 +57,15 @@ function createTags(){
         }else if(valueText[i] === "="){
 
             buttons.setAttribute('class', 'equal');
-           let  corEqual = document.querySelector('.equal');
+           let corEqual = document.querySelector('.equal');
             corEqual.style.background = '#E2E2E2';
             corEqual.style.color = '#343434';
 
         }
              
     }
-       
+     
    
-
-    
-  
     
     
     
