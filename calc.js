@@ -1,3 +1,6 @@
+let monitor = document.querySelector('#monitor');
+let monitorDis = document.querySelector('#monitorDis');
 
-
-dipM.innerHTML='0';
+monitor.textContent = '0';
+monitorDis.textContent = '1';
+   

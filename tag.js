@@ -2,12 +2,12 @@ document.body.onload = createTags();
  
 function createTags(){
 
-    let body = document.querySelector('body');
-    let main = document.createElement('main');
-    let display = document.createElement('div');
-    let teclas = document.createElement('div');
-    let dipM = document.createElement('p');
-    let monitor = document.createElement('p');
+    var body = document.querySelector('body');
+    var main = document.createElement('main');
+    var display = document.createElement('div');
+    var teclas = document.createElement('div');
+    var monitor = document.createElement('p');
+    var monitorDisplay = document.createElement('p');
    
     const valueText = [
 
@@ -22,15 +22,15 @@ function createTags(){
     main.setAttribute("id","corpo");
     teclas.setAttribute("id","tec");
     display.setAttribute("id","display");
-    dipM.setAttribute("id","top-monitor");
     monitor.setAttribute("id","monitor");
+    monitorDisplay.setAttribute("id","monitorDis");
     
     
 
    // adicionando childs
 
     display.appendChild(monitor);
-    display.appendChild(dipM);
+    display.appendChild(monitorDisplay);
     main.appendChild(display);
     main.appendChild(teclas);
     body.appendChild(main);
@@ -71,3 +71,4 @@ function createTags(){
     
    
 }
+

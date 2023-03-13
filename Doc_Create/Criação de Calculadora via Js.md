@@ -32,7 +32,8 @@
   ```
 
 <<<<<<< HEAD
-- 
+-
+
 =======
 Para criar 15 buttons encontrei dificuldade sabia que precisava criar um loop no primeiro momento montei a estrutura, mas não estava sabendo executar, procurei na internet mais não encontrei. 
 
@@ -44,19 +45,17 @@ for( let i = 1; i <= 15; i++ ){
         let buttons = document.createElement('button');
         buttons.setAttribute("id", "buttons");
         main.appendChild(buttons);
-       
 
 
 
-        
+
+
     }
 ```
 
 Com o for os `buttons` foram criados, mas eu me encontrei com uma questão como atribuir valor aos botões. 
 
 Então declarei uma `array valueText` com os valores dos botões e dentro do `for` chamei a minha lista e seu `index[i]` 
-
-
 
 ```código
  for( let i = 1; i <= 15; i++ ){
@@ -68,17 +67,13 @@ Então declarei uma `array valueText` com os valores dos botões e dentro do `fo
 
 
 
-        
+
     }
 ```
 
-
-
 Percebi que a quantidade de botões estava errada e precisei corrigir o loop ficando dessa forma: 
 
-
-
-```loop corrigido
+```loop
 for( let i = 0; i < 19; i++ ){
 
         let buttons = document.createElement('button');
@@ -88,16 +83,16 @@ for( let i = 0; i < 19; i++ ){
 
 
 
-        
+
     }
 ```
 
+- Buttons criados partir para stilização no css. Para a organização dos itens utilizei o grid, pois é uma propriedade que eu ainda não tenho tanto domínio, por ser um layout simples fiz o teste. 
 
+- Não encontrei dificuldade para inserir o grida o elemento corpo, mas percebi que as teclas precisariam está encapsuladas por uma outra div, para que eu pudesse gerar outro grid e dividir os buttons.  Realizei o processo da divisão do meu teclado após inserir uma nova div para encapsulamento dos buttons. Encontrei uma pequena dificuldade para achar a solução para o meu button igual, não estava conseguindo fazer com que ele ocupação duas colunas, após algumas pesquisas consegui. 
 
+- Atribuir uma class a ele e usei a propriedade `grid-column: span 2;`, assim consegui realizar o procedimento.
 
->>>>>>> 65b7fe9e5fe1ed99f5c2bf1b1325b0d3dd027b20
+- Cheguei no momento de mostra no visor da calculadora os valores. Crei um novo arquivo `js` para executar a função de calculo. 
 
-Buttons criados partir para stilização no css. Para a organização dos itens utilizei o grid, pois é uma propriedade que eu ainda não tenho tanto domínio, por ser um layout simples fiz o teste. 
-Não encontrei dificuldade para inserir o grida o elemento corpo, mas percebi que as teclas precisariam está encapsuladas por uma outra div, para que eu pudesse gerar outro grid e dividir os buttons. 
-Realizei o processo da divisão do meu teclado após inserir uma nova div para encapsulamento dos buttons. Encontrei uma pequena dificuldade para achar a solução para o meu button igual, não estava conseguindo fazer com que ele ocupação duas colunas, após algumas pesquisas consegui. 
-Atribuir uma class a ele e usei a propriedade `grid-column: span 2;`, assim consegui realizar o procedimento.
+- encontrei dificuldade para chamar  a `variável` que havia criado, mas depois de alguns testes eu consegui. 
