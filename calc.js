@@ -1,4 +1,7 @@
-let monitor = document.querySelector('#monitor');
-let monitorDis = document.querySelector('#monitorDis');
-let btnClick = document.querySelectorAll('#tec >  #buttons'); 
+class Calculo{
+    constructor(){
+        this.monitor = document.querySelector('#monitorDisplay');
+        this.monitorDisplay = document.querySalector('#monitor');
+    }
+}
 

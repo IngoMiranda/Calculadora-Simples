@@ -67,7 +67,7 @@ function createTags(){
      
    
     
-    
+    let calc = new Calculo();
     
    
 }
