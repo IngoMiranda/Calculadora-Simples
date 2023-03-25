@@ -36,16 +36,10 @@ function createTags(){
         if(valueText[i] === "CE" || valueText[i] === "C" || valueText[i] === "DEL"){
 
             buttons.setAttribute('class', 'cor');
-            let cor = document.querySelectorAll('.cor');
-            cor.forEach(el=>{
-                el.style.background = '#E2E2E2';
-                el.style.color = '#343434';
-            })
-    
+              
         }else if(valueText[i] === "="){
             buttons.setAttribute('class', 'equal');
-           
-            
+                       
         }
              
     }
