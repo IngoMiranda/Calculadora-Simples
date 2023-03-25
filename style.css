@@ -68,7 +68,7 @@
     
 }
 
-#tec > #buttons  {
+#tec > .buttons, .cor, .equal  {
     width: 100%;
     color: #E2E2E2;
     font-size: 1rem;
@@ -84,4 +84,6 @@
 .equal{
     
     grid-column: span 2;
+    background: #e2e2e2;
+    color: #242424;
 }
