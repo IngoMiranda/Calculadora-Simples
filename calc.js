@@ -1,26 +1,25 @@
 class Calculo{
     constructor(){
-        this.monitor = '0';
+        this.monitorDisplay = "";
+        this.monitor = "";
         this.iniciar();
-        
     }
 
     iniciar(){
        
-        let monitorEl = document.querySelector('#display');
-
-        monitorEl.innerHTML = '12354';
-
-        
+        let monitorE = document.querySelector("#monitorDis");
+        monitorE.innerHTML = '0';    
     }
 
     get displayCalc(){
-        return this.monitor;
+        return this.monitorDisplay;
     }
 
     set displayCalc(valor){
+        this.monitorDisplay = valor;
         this.monitor = valor;
     }
 
 }
 
+let calc = new Calculo();

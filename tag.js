@@ -42,11 +42,9 @@ function createTags(){
                        
         }
              
-    }
-     
-   
-    
-      
-    
+    }   
    
 }
+
+
+
