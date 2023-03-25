@@ -96,3 +96,7 @@ for( let i = 0; i < 19; i++ ){
 - Cheguei no momento de mostra no visor da calculadora os valores. Crei um novo arquivo `js` para executar a função de calculo. 
 
 - encontrei dificuldade para chamar  a `variável` que havia criado, mas depois de alguns testes eu consegui. 
+
+- Cometi um erro de ter dado o mesmo id para vários botões, então corrigir colocando uma`class` para eles, ajustei o css; 
+
+- Precisei adicionar cores diferente em 3 botões, para isso usando um `if e else if` fiz um verificador, onde buscava os valores ` CE, C, DEL e = ` nos botões 
