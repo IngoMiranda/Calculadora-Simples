@@ -100,3 +100,19 @@ for( let i = 0; i < 19; i++ ){
 - Cometi um erro de ter dado o mesmo id para vários botões, então corrigir colocando uma`class` para eles, ajustei o css; 
 
 - Precisei adicionar cores diferente em 3 botões, para isso usando um `if e else if` fiz um verificador, onde buscava os valores ` CE, C, DEL e = ` nos botões 
+
+
+
+Decidir que no momento não vou realizar os calculo via orientação a objeto, estou percebendo que preciso estudar um pouco mais para consolidar os conceitos e suas aplicações. Acredito que estou tendo um pouco mais de dificuldade porque passei um bom tempo sem praticar. 
+
+Dessa forma os próximos passos serão:  
+
+- Evento de Clique nos butões;
+
+- coletar os valores ;
+
+- separar operadores de números;
+
+- tratar possívei erros que usuário possa cometer ;
+
+- criar função para calcular;
