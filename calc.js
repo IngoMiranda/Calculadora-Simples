@@ -1,9 +1,9 @@
 /*
-- Evento de Clique nos butões;
+- Evento de Clique nos butões; okey
   
-- coletar os valores ;
+- coletar os valores ; okey
   
-- separar operadores de números;
+- separar operadores de números; okey
   
 - tratar possívei erros que usuário possa cometer ;
   
@@ -18,10 +18,14 @@ buttons.forEach((btn)=>{
     btn.addEventListener('click', (e)=>{
         let valor = e.target.innerHTML;
         if(+valor >= 0 || valor === "."){
-            console.log(valor);
+            display.innerHTML += valor
         }else{
-            console.log("opera " + valor)
+            display.innerHTML += valor;
         }
     });
 });
+
+function del(){
+    
+}
 
