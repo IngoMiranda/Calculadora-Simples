@@ -1,4 +1,5 @@
-/*- Evento de Clique nos butões;
+/*
+- Evento de Clique nos butões;
   
 - coletar os valores ;
   

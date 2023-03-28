@@ -122,5 +122,15 @@ Dessa forma os próximos passos serão:
 
 
 ```Clique nos butões da claculadora e identificação de números e operadores
+buttons.forEach((btn)=>{
+    btn.addEventListener('click', (e)=>{
+        let valor = e.target.innerHTML;
+        if(+valor >= 0 || valor === "."){
+            console.log(valor);
+        }else{
+            console.log("opera " + valor)
+        }
+    });
+});
 
 ```
