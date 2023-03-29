@@ -14,18 +14,19 @@ let previuMonitor = document.querySelector("#monitor");
 let display = document.querySelector("#monitorDis");
 let buttons = document.querySelectorAll("#tec button");
 
+
 buttons.forEach((btn)=>{
     btn.addEventListener('click', (e)=>{
         let valor = e.target.innerHTML;
         if(+valor >= 0 || valor === "."){
-            display.innerHTML += valor
+            display.innerHTML += valor;
         }else{
             display.innerHTML += valor;
         }
     });
 });
 
-function del(){
-    
-}
+
+
+
 
