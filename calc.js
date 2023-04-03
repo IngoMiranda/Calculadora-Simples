@@ -10,20 +10,30 @@
 - criar função para calcular;*/
 
 
-let previuMonitor = document.querySelector("#monitor");
-let display = document.querySelector("#monitorDis");
+let displaySuperior = document.querySelector("#monitor");
+let displayPrincipal = document.querySelector("#monitorDis");
 let buttons = document.querySelectorAll("#tec button");
+let digitoPrincipal = "";
+let digitoSuperior = "";
 
 
 buttons.forEach((btn)=>{
-    btn.addEventListener('click', (e)=>{
-        let valor = e.target.innerHTML;
+    btn.addEventListener('click', ()=>{
+        let valor = btn.innerHTML;
         if(+valor >= 0 || valor === "."){
-            display.innerHTML += valor;
+            digitoPrincipal += valor;
+        
         }else{
-            display.innerHTML += valor;
+            digito += valor;
+            
         }
+        
+        displayPrincipal.innerHTML = digitoPrincipal;
+        displaySuperior.innerHTML = digitoPrincipal;
+        
     });
+
+    
 });
 
 
