@@ -29,6 +29,7 @@
     align-items: flex-end;
     width: 100%;
     height: 6rem;
+    object-fit: cover;
     background-color: #E2E2E2;
 }
 

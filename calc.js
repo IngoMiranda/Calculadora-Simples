@@ -17,23 +17,16 @@ let digitoPrincipal = "";
 let digitoSuperior = "";
 
 
+
 buttons.forEach((btn)=>{
     btn.addEventListener('click', ()=>{
         let valor = btn.innerHTML;
         if(+valor >= 0 || valor === "."){
-            digitoPrincipal += valor;
-        
+            console.log(valor);        
         }else{
-            digito += valor;
-            
+            console.log(valor);
         }
-        
-        displayPrincipal.innerHTML = digitoPrincipal;
-        displaySuperior.innerHTML = digitoPrincipal;
-        
     });
-
-    
 });
 
 
