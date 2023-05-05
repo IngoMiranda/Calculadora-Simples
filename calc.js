@@ -9,8 +9,6 @@
   
 - criar função para calcular;*/
 
-
-
 let buttons = document.querySelectorAll("#tec button");
 const display = document.querySelector("#monitorDis");
 let digitoAnterior= "0";
@@ -25,7 +23,7 @@ buttons.forEach((btn)=>{
     btn.addEventListener('click', ()=>{
         let valor = btn.innerHTML;
         if(+valor >= 0 || valor === "."){
-            digito = valor; 
+            digito += valor; 
                  
         }else{
             operador = valor;
