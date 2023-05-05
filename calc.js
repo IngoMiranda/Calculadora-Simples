@@ -10,26 +10,26 @@
 - criar função para calcular;*/
 
 
-let displaySuperior = document.querySelector("#monitor");
-let displayPrincipal = document.querySelector("#monitorDis");
-let buttons = document.querySelectorAll("#tec button");
-let digitoPrincipal = "";
-let digitoSuperior = "";
 
+let buttons = document.querySelectorAll("#tec button");
+let digito= "";
+let operador = "";
+console.log(digito);  
 
 
 buttons.forEach((btn)=>{
     btn.addEventListener('click', ()=>{
         let valor = btn.innerHTML;
         if(+valor >= 0 || valor === "."){
-            console.log(valor);        
+            digito = valor; 
+                 
         }else{
-            console.log(valor);
+            operador = valor;
         }
     });
 });
 
 
-
+console.log(digito);
 
 
