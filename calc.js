@@ -12,10 +12,14 @@
 
 
 let buttons = document.querySelectorAll("#tec button");
+const display = document.querySelector("#monitorDis");
 let digito= "";
 let operador = "";
-console.log(digito);  
 
+
+function atualizaDisplay(){
+    display.textContent = `${digito} ${operador}`;
+}
 
 buttons.forEach((btn)=>{
     btn.addEventListener('click', ()=>{
@@ -26,10 +30,9 @@ buttons.forEach((btn)=>{
         }else{
             operador = valor;
         }
+        atualizaDisplay();
     });
+    
 });
-
-
-console.log(digito);
 
 
