@@ -13,9 +13,9 @@
 
 let buttons = document.querySelectorAll("#tec button");
 const display = document.querySelector("#monitorDis");
+let digitoAnterior= "0";
 let digito= "";
 let operador = "";
-
 
 function atualizaDisplay(){
     display.textContent = `${digito} ${operador}`;
@@ -34,5 +34,7 @@ buttons.forEach((btn)=>{
     });
     
 });
+
+
 
 
