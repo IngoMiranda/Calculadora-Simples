@@ -11,23 +11,25 @@
 
 
 let buttons = document.querySelectorAll("#tec button");
-const display = document.querySelector("#monitorDis")
+const display = document.querySelector("#monitorDis");
+const displayOPen = document.querySelector("#monitor");
 let digito = "";
-//let digitoAnterior = "";
+let digitoAnterior = "";
 let operador = "";
 
 function atualizaDisplay(){
-    display.textContent = `${digito}${operador}`;
+    display.textContent = `${digitoAnterior}${operador}${digito}`;
 }
 
 buttons.forEach((btn)=>{
     btn.addEventListener('click', ()=>{
         let valor = btn.innerHTML;
         if(+valor >= 0 || valor === "."){
-            digito = valor;
+            digito += valor;
+            digitoAnterior = digito;
                
         }else{
-            operador = valor;
+            operador += valor;
         }
         atualizaDisplay();
     });   
