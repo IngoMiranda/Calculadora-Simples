@@ -40,9 +40,9 @@ function createTags(){
         }else if(valueText[i] === "="){
             buttons.setAttribute('class', 'equal');
                        
-        }
+        };
              
-    }   
+    };   
    
 }
 

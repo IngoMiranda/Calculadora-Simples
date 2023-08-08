@@ -13,7 +13,6 @@
 let buttons = document.querySelectorAll("#tec button");
 const display = document.querySelector("#monitorDis");
 const displayOPen = document.querySelector("#monitor");
-let digitoAnterior = "";
 let digito = "";
 let operador = "";
 
