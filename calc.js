@@ -13,10 +13,35 @@
 let buttons = document.querySelectorAll("#tec button");
 const display = document.querySelector("#monitorDis");
 const displayOPen = document.querySelector("#monitor");
+//let digitoAnterior = "";
 let digito = "";
 let operador = "";
 
+function displayAtualiza(){
+    display.innerHTML= `${digito}` + `${operador}`;
+      
+}
 
+buttons.forEach((btns)=>{
+    btns.addEventListener('click', ()=>{
+        let btn = btns.innerHTML;
+        if(+btn >= 0 ){
+            digito += btn;
+                      
+        }else if( btn === "."){
+            digito += btn;
+        }else if( btn === "CE" || btn === "C" || btn === "DEL" ){
+            console.log(btn);
+        }else{
+            operador = btn;
+            
+        };
+
+        displayAtualiza();
+
+    });
+    
+})
 
 
 
