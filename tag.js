@@ -32,17 +32,24 @@ function createTags(){
         buttons.setAttribute("class", "buttons");
         teclas.appendChild(buttons);
         buttons.innerHTML = valueText[i];
-
+        
         if(valueText[i] === "CE" || valueText[i] === "C" || valueText[i] === "DEL"){
-
             buttons.setAttribute('class', 'cor');
-              
+            if(valueText[i] === "CE" ){
+                buttons.setAttribute('id', 'ce');
+            }else if(valueText[i] === "C"){
+                buttons.setAttribute('id', 'c');
+            }else{
+                buttons.setAttribute('id', 'del');
+            }             
         }else if(valueText[i] === "="){
             buttons.setAttribute('class', 'equal');
                        
         };
              
     };   
+
+
    
 }
 

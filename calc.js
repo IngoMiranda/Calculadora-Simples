@@ -17,9 +17,8 @@ const displayOPen = document.querySelector("#monitor");
 let digito = "";
 let operador = "";
 
-function displayAtualiza(){
-    display.innerHTML= `${digito}` + `${operador}`;
-      
+function displayAtualiza(digito){
+    display.innerHTML += digito;    
 }
 
 buttons.forEach((btns)=>{
@@ -37,7 +36,7 @@ buttons.forEach((btns)=>{
             
         };
 
-        displayAtualiza();
+        displayAtualiza(btn);
 
     });
     
