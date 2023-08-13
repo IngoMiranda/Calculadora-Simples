@@ -20,8 +20,12 @@ let digito = "";
 let operador = "";
 
 function displayAtualiza(digito){
-    display.innerHTML += digito;    
+    display.innerHTML += digito; 
+    correcaoPonto();
+    
 };
+
+// Eventos de clique
 
 buttons.forEach((btns)=>{
     btns.addEventListener('click', ()=>{
@@ -43,10 +47,22 @@ buttonDel.addEventListener('click', ()=>{
     deletarUltimo();
 });
 
+// Funções correção e operações
+
 function corrigirTudo(){
     display.innerHTML = " "; 
 };
 
 function deletarUltimo(){
-
+    // slice gera uma nova matriz a partir de uma já existente. No caso abaixo uso o valor inical de 0 e o final de -1 
+    // para que a sempre o ultimo valor da matriz seja excluído.
+    display.innerHTML = display.innerHTML.slice(0,-1);
 };
+
+function correcaoPonto(entradaPonto){
+    //display.innerHTML = entradaPonto;
+    if(display.innerHTML.includes(".")){
+        return;
+    }
+    
+}
