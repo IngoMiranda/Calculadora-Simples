@@ -10,7 +10,7 @@
     font-weight: 700;
 }
 
-#corpo{
+#corpo {
     width: 400px;
     height: auto;
     display: grid;
@@ -23,7 +23,7 @@
     background-color: #242424;
 }
 
-#display{
+#display {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: flex-end;
@@ -33,43 +33,43 @@
     background-color: #E2E2E2;
 }
 
-#monitorDis{
+#monitorDis {
     width: 100%;
     grid-row: span 2;
     align-items: start;
-    padding:  0 10px;
+    padding: 0 10px;
     text-align: end;
     font-size: 3.5rem;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    color:#242424;
-    
+    color: #242424;
 }
 
-#monitor{
+#monitor {
     width: 100%;
     align-items: start;
     text-align: center;
-    padding:  0 20px;
+    padding: 0 20px;
     text-align: end;
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    color:#242424;
-    
+    color: #242424;
 }
 
-#tec{
+#tec {
     width: 100%;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row: 2/ 5;
-    gap: 5px; 
-    
+    gap: 5px;
 }
 
-#tec > .buttons, .cor, .equal  {
+#tec>.buttons,
+.cor,
+.equal,
+.operador {
     width: 100%;
     color: #E2E2E2;
     font-size: 1rem;
@@ -82,13 +82,13 @@
     cursor: pointer;
 }
 
-.equal{
+.equal {
     grid-column: span 2;
     background: #e2e2e2;
     color: #242424;
 }
-.cor{ 
+
+.cor {
     background: #e2e2e2;
     color: #242424;
 }
-
